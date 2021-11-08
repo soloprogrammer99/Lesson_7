@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_7</title>
+</head>
+<!-- <div class="wrapper"> 
+      <header class="header"></header>
+      <main class="main">
+         <div class="whoweare">
+         
+         
+         <div class="whoweare_container">
+            
+            <div class="whoweare_content">
+               <div class="whoweare_header">
+                  <img class="whoweare_logo" src="img/icon.png" alt="Icon">
+                  <p class="whoweare_subtitle">
+                     who we are
+                  </p>
+                  <h2 class="whoweare_title">Nemo enim ipsam voluptatem quia voluptas in proident</h2>
+               </div>
+               <p class="whoweare_text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                  suscipit
+                  laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit
+                  qui in
+                  ea
+                  voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                  voluptas
+                  nulla pariatur.
+               </p>
+            </div>
+         </div>
+   </div>
+   <div class="whoweare-image">
+      <div class="whoweare-image_container">
+         <img class="whoweare-image_image" src="img/image_1.png" alt="image">
+      </div>
+      
+   </div>
+   <div class="text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab iure nobis at odit illo. Dolore assumenda,
+      voluptatum fugit tempora placeat ab laboriosam facere enim libero voluptatem hic, neque modi itaque.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et laudantium repellendus error rem perferendis
+      omnis consequatur ipsum quam mollitia molestias quo non blanditiis possimus distinctio dolores, ut impedit
+      corporis dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet debitis vel illo eaque
+      laudantium quas incidunt quis quos iusto commodi consequuntur libero tempore magni architecto minima
+      asperiores, nemo quaerat. Tempore.
+   </div>
+   </main>
+   -->
+
+<body class="content">
+   <div class="wrapper">
+      <header class="header">
+         <h2>Проработка основного урока № 7</h2>
+         <h3>CSS свойства background. Работа с фоном.</h3>
+      </header>
+      <main class="main">
+         <h4>Свойство background-color или просто background</h4>
+         <div class="block">
+            Здесь мы задали background-color цвет aquamarine, и padding (внутренний отступ) 50px.
+         </div>
+         <h4>Свойство background-image</h4>
+         <p>Свойство background-image устанавливает фоновое изображение или градиентную заливку. Здесь изменения в
+            синтаксисе в том, что мы должны указать дополнительный параметр url(), куда мы и будем писать путь к нашему
+            изображению, которое мы хотим установить фоном. Фактически, background-image используется для того, чтобы
+            задать не цвет, а картинку.</p>
+         <div class="block_1">Здесь мы вставили картинку в качестве фона. Причём размера картинки не хватило на всю
+            ширину, и она опять вставилась после того, как закончилась.</div>
+         <div class="block_2">А здесь сделали салатовый цвет самого фона background-color и на его фон наложили еще
+            много маленьких картиночек (потому что размер их маленький) background-image. Причём, сначала идет цвет
+            фона, а затем накладывается картинка.</div>
+         <h4>Универсальное свойство</h4>
+         <div class="block_3">В "Универсальном свойстве" мы пишем цвет, пробел, а затем то же самое. background: green
+            url("..img/icon/png")</div>
+         <h4>Градиенты</h4>
+         <p>Градиенты - это довольно сложная, но красивая штука. И нам можно самим гененировать их, но это муторно, а
+            можно воспользоватся генератором градиентов:</p>
+         <div>
+            <a href="https://www.colorzilla.com/gradient-editor/" target="_blank" class="hover">Ссылка на "генератор
+               градиентов"</a>
+         </div>
+         <div>
+            <a href="https://fls.guru/cssbackground.html" target="_blank" class="hover_2">Шпаргалка по уроку от Жени</a>
+         </div>
+         <div class="block_4">Здесь мы взяли готовый градиент из "генератора градиентов", расположенного по ссылке выше.
+         </div>
+         <h3>Свойство background-repeat</h3>
+         <p>Вообще изображение по умаолчанию повторяется. На заданной площади сколько умещается изображений размеру,
+            столько их и будет, но мы можем этим делом управлять. По умолчанию у свойства background-repeat стоит
+            значение repeat, но мы можем задать например background-repeat: no-repeat; и тогда изображение не будет
+            повторяться</p>
+         <div class="block_5">Здесь у нас картинка повторяется по умолчанию.</div>
+         <div class="block_6">Здесь у нас картинка с значением no-repeat повторилась только один раз вначале.</div>
+         <div class="block_7">Также мы можем повторять изображения по определённой оси. Это очень удобно, если нам нужно
+            бесшовно-повторяющееся изображение по оси "x" по горизонтали или по оси "y" по вертикали. Это всё мы можем
+            дописать в "универсальном свойстве".</div>
+         <div class="block_8">Значение background-repeat: space; визуально практически ничего не меняет, но она
+            позволяет картинке не обрезаться при изменении размера, а просто менять отступы между картинками.</div>
+         <div class="block_9">Значение background-repeat: round; вместо того, чтобы изменять отступ между картинками, он
+            деформирует само изображение.</div>
+         <h4>Свойство background-position</h4>
+         <p>Свойство background-position отвечает за то, где будет находиться блок или картинка. По умолчанию у него
+            значение background-position: 0 0; что означает верхний левый угол. Могут быть значения как пиксельные, так
+            и процентные, а также словесные.</p>
+         <div class="block_10">Здесь, например, мы задали позицию background-position: bottom left; то есть снизу-слева.
+         </div>
+         <div class="block_11">Так же мы можем получить центрированное изображение, указав background-position: center;
+         </div>
+         <div class="block_12">Если мы просто укажем значение background-position: left; то подразумевается, что она
+            автоматически центрируется, и будет выглядеть вот так (здесь картинка слева посередине).</div>
+         <div class="block_13">Если же мы хотим более гибкое позиционирование картинки, то здесь нам помогут пиксели.
+            Первое значение определяет положение по горизонтали (слева-направо), второе значение - по вертикали
+            (сверху-вниз).</div>
+         <div class="block_14">Ну и значение в процентах. Соответственно, проценты берутся от ширины родителя. Также мы
+            можем комбинировать.</div>
+         <p>Картинка также может быть и намного больше. И если мы зададим например, значение background-position: 50%,
+            то картинка будет просто по центру, в отличие от двойных значений, например 20% 45% Даже когда изображение
+            больше, оно всё-равно начинает позиционироваться от заданной точки. Она как бы становится фоном по
+            указанному позиционированию.</p>
+         <h4>Свойство background-size</h4>
+         <p>Свойство background-size тоже устанавливает размеры элемента. Этим свойством ее можно как увеличивать, так и
+            уменьшать. По умолчанию background-size: auto auto; опять же ширина-высота, два значения, это значит, что
+            какого размера картинка, такая она и будет нам здесь выведена. Так же мы можем указывать ширину как в
+            пикселях, так и в процентах.</p>
+         <div class="block_15">Если мы указали только ширину картинки, например 80px, соответственно подстроится и
+            высота картинки - отдельно её можно не указывать, тогда размеры изменятся равномерно и соответственно
+            ширина-высота. Естественно, при увеличении растровую картинку размывает.</div>
+         <div class="block_16">Очень интересное значение - background: cover: При нём картинка всегда пытается
+            уместиться в заданный объект, заполнить собой блок.</div>
+         <h4>Свойство background-attachment</h4>
+         <div class="block_17">background-attachment отвечает за то, будет ли картинка скроллиться. По умолчанию стоит
+            значение background-attachment: scroll; но если мы изменим на background-attachment: fixed; то изображение
+            становится фоном у всего контента, и что самое интересное, оно не скроллится скроллом. Но здесь становится
+            непонятно, относительно чего оно позиционируется - как-будто она остаётся неподвижным задним фоном, и висит
+            сзади, а на ее фоне двигается текст и окна. Плюс в браузерах safari с этим свойством получаются проблемы. Но
+            при этом всё же получается довольно красивый и необычный эффект. И всё же, когда нам нужен такой эффект, то
+            лучше нам прибегнуть к более надёжным свойствам, о которых мы узнаем на следующих уроках.</div>
+         <h3>Работа с "Универсальными свойствами"</h3>
+         <h4>Самая часто используемая конструкция</h4>
+         <p>background: green url("../img/icon.png") 50% / cover no-repeat fixed; Так будет выглядеть полная запись этой
+            конструкции: цвет-картинка-позиционирование-размер-(повторение-неповторение)-(фиксация-прокручивание). Даже
+            можно под эту конструкцию сделать снипет.</p>
+         <div class="block_18"><b> Здесь у нас несколько значений "Универсального свойства". Мы их пишем через запятую.
+               Мы наложили друг на друга несколько слоёв фона. И чем ближе слой картинки стоит к свойству background,
+               тем выше по наложению этот слой будет. Сплошной цвет указываем в самой последней записи "Универсального
+               значения", и наслаиваем. Соответственно, мы можем для них задавать разные значения (от процентных до
+               текстовых).</b></div>
+         <div class="block_19"><b>А здесь мы попробовали вместо цвета в задний фон добавить градиент.</b></div>
+         <div class="block_20">А здесь мы по сути наложили градиент на заднюю фоновую картинку. Сначала, ближе к
+            свойству background в css поставили в значениях значения полупрозрачного градиента из сайта-генератора
+            цветов градиента, а потом уже картинку. background: градиент, картинка;</div>
+         <h3>Практическая работа</h3>
+         <h4>Делаем список с background</h4>
+         <ul>
+            <li>Пункт №1. Размер шрифта всей таблицы - 20px.</li>
+            <li>Пункт №2. Минимальная высота выставлена по размеру картинки min-height: 27px;</li>
+            <li>Пункт №3. А иначе, если выставлена меньше, или не выставлена, то она обрезается.
+               <ul>
+                  <li class="list">Подпункт 1. А это "список в списке"</li>
+                  <li class="list">Подпункт 2. Ему мы сделали другой background</li>
+                  <li class="list">Подпункт 3.</li>
+               </ul>
+            </li>
+            <li>Пункт №4. Сделали двойной фон у списка. Сначала общий, с большой картинки.</li>
+            <li>Пункт №5. Потом поверх общего фона, наложили маленькую картинку (ромбик).</li>
+         </ul>
+         <p>Использование свойство background. Очень важно его использовать только там, где у нас действительно фон, где
+            изображение не контентное, где оно не будет упираться, меняться и еще как-нибудь неожиданно реагировать. В
+            основном его используют
+            в качестве дизайна.</p>
+      </main>
+   </div>
+   <h2>Домашка к уроку № 7</h2>
+   <h3>№ 1. Отрабатываем каждое свойство background</h3>
+   <p>Выше мы отработали каждое свойство background и написали шпаргалку на будущее.</p>
+
+   <footer class="footer">
+      <h3>№ 2. Стилизуем список так, чтобы картинка была справа.</h3>
+      <ul>
+         <li class="right">Здесь</li>
+         <li class="right">мы поставили</li>
+         <li class="right">картинку</li>
+         <li class="right">справа</li>
+      </ul>
+      <div class="phone_2">
+         <h3>№ 3. Верстаем блок из макета (Car Repair and Doggie)</h3>
+         <div class="phone">
+            <span class="heading">Top notch service is our main auto motive</span>
+            <img src="img/Button.png" class="button" alt="Button">
+         </div>
+      </div>
+      <h3>№ 4. Верстаем раздел "Контакты"</h3>
+      <div class="contact">
+         <p class="sup">CONTACT</p>
+         <ul>
+            <li class="sup_2">321 Pikes Place Parkway Seattle, WA 54321</li>
+            <li class="sup_3">(555)765-4321</li>
+            <li class="sup_4">Info@company.com</li>
+            <li class="sup_5">Mon - Sat: 7:000 am - 6:00 pm</li>
+         </ul>
+      </div>
+   </footer>
+</body>
+
+</html>
